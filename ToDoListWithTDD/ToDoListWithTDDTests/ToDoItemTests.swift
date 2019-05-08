@@ -10,6 +10,21 @@ import XCTest
 @testable import ToDoListWithTDD
 
 class ToDoItemTests: XCTestCase {
+    var firstItem: ToDoItem?
+    var secondITem: ToDoItem?
+    
+    override func setUp() {
+        firstItem = ToDoItem(title: "Coffee",
+                             itemDescription: "with cake",
+                             timeStamp: 0.0,
+                             location: nil)
+        
+        secondITem = ToDoItem(title: "Stake",
+                              itemDescription: "with wine",
+                              timeStamp: 0.0,
+                              location: Location(name: "NewYork"))
+    }
+    
     /// STEP1: We need initializer
     
     func testInit_ShouldTakeTitle() {
@@ -44,5 +59,41 @@ class ToDoItemTests: XCTestCase {
                             timeStamp: 0.0,
                             location: location)
         XCTAssertEqual(item.location?.name, location.name, "Initializer should set the Locaiton")
+    }
+    
+    func testEqualItems_ShouldBeEqual() {
+        let firstItem = ToDoItem(title: "First")
+        let secondItem = ToDoItem(title: "First")
+        XCTAssertEqual(firstItem, secondItem)
+    }
+    
+    func testWhenOneLocationIsNilAndTheOtherIsnt_ShouldBeNotEqual() {
+        XCTAssertNotEqual(firstItem, secondITem)
+    }
+    
+    func testWhenTimestampDifferes_ShouldBeNotEqual() {
+        let firstItem = ToDoItem(title: "Stake",
+                             itemDescription: "with wine",
+                             timeStamp: 1.0,
+                             location: nil)
+        
+        let secondITem = ToDoItem(title: "Stake",
+                              itemDescription: "with wine",
+                              timeStamp: 0.0,
+                              location: nil)
+        XCTAssertNotEqual(firstItem, secondITem)
+    }
+    
+    func testWhenDescriptionDifferes_ShouldBeNotEqual() {
+        let firstItem = ToDoItem(title: "Stake",
+                                 itemDescription: "with cake",
+                                 timeStamp: 1.0,
+                                 location: nil)
+        
+        let secondITem = ToDoItem(title: "Stake",
+                                  itemDescription: "with wine",
+                                  timeStamp: 0.0,
+                                  location: nil)
+        XCTAssertNotEqual(firstItem, secondITem)
     }
 }

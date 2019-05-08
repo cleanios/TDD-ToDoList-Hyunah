@@ -18,6 +18,8 @@
 		ACA1AACD2276573C004C1E95 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AACC2276573C004C1E95 /* LocationTests.swift */; };
 		ACA1AACF227660E9004C1E95 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AACE227660E9004C1E95 /* ItemManagerTests.swift */; };
 		ACA1AAD122766270004C1E95 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AAD022766270004C1E95 /* ItemManager.swift */; };
+		ACA1AAD32279CB58004C1E95 /* ToDoItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AAD22279CB58004C1E95 /* ToDoItem+Extension.swift */; };
+		ACA1AAD52279D704004C1E95 /* Location+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AAD42279D704004C1E95 /* Location+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		ACA1AACC2276573C004C1E95 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		ACA1AACE227660E9004C1E95 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
 		ACA1AAD022766270004C1E95 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		ACA1AAD22279CB58004C1E95 /* ToDoItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+Extension.swift"; sourceTree = "<group>"; };
+		ACA1AAD42279D704004C1E95 /* Location+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 		AC8913A5226C6CE600E21374 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ACA1AAD22279CB58004C1E95 /* ToDoItem+Extension.swift */,
+				ACA1AAD42279D704004C1E95 /* Location+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 				AC891385226C676A00E21374 /* ViewController.swift in Sources */,
 				ACA1AAD122766270004C1E95 /* ItemManager.swift in Sources */,
 				AC891383226C676A00E21374 /* AppDelegate.swift in Sources */,
+				ACA1AAD52279D704004C1E95 /* Location+Extension.swift in Sources */,
 				ACA1AACB22758B46004C1E95 /* Location.swift in Sources */,
+				ACA1AAD32279CB58004C1E95 /* ToDoItem+Extension.swift in Sources */,
 				ACA1AAC822746DF1004C1E95 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
