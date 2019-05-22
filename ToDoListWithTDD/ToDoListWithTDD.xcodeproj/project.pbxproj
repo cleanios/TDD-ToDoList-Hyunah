@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC40159B22959097000E918A /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40159A22959097000E918A /* ItemListDataProvider.swift */; };
 		AC891383226C676A00E21374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC891382226C676A00E21374 /* AppDelegate.swift */; };
-		AC891385226C676A00E21374 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC891384226C676A00E21374 /* ViewController.swift */; };
+		AC891385226C676A00E21374 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC891384226C676A00E21374 /* ItemListViewController.swift */; };
 		AC891388226C676A00E21374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC891386226C676A00E21374 /* Main.storyboard */; };
 		AC89138A226C676A00E21374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC891389226C676A00E21374 /* Assets.xcassets */; };
 		AC89138D226C676A00E21374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC89138B226C676A00E21374 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,7 @@
 		ACA1AAD122766270004C1E95 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AAD022766270004C1E95 /* ItemManager.swift */; };
 		ACA1AAD32279CB58004C1E95 /* ToDoItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AAD22279CB58004C1E95 /* ToDoItem+Extension.swift */; };
 		ACA1AAD52279D704004C1E95 /* Location+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AAD42279D704004C1E95 /* Location+Extension.swift */; };
+		ACA1AAD7229123DF004C1E95 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AAD6229123DF004C1E95 /* ItemListViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC40159A22959097000E918A /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		AC89137F226C676A00E21374 /* ToDoListWithTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListWithTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC891382226C676A00E21374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC891384226C676A00E21374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC891384226C676A00E21374 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		AC891387226C676A00E21374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC891389226C676A00E21374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC89138C226C676A00E21374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		ACA1AAD022766270004C1E95 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		ACA1AAD22279CB58004C1E95 /* ToDoItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+Extension.swift"; sourceTree = "<group>"; };
 		ACA1AAD42279D704004C1E95 /* Location+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Extension.swift"; sourceTree = "<group>"; };
+		ACA1AAD6229123DF004C1E95 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC40159922959083000E918A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				AC40159A22959097000E918A /* ItemListDataProvider.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		AC891376226C676A00E21374 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,7 @@
 				ACA1AAC52274696D004C1E95 /* ToDoItemTests.swift */,
 				ACA1AACC2276573C004C1E95 /* LocationTests.swift */,
 				ACA1AACE227660E9004C1E95 /* ItemManagerTests.swift */,
+				ACA1AAD6229123DF004C1E95 /* ItemListViewControllerTests.swift */,
 				AC891399226C676B00E21374 /* Info.plist */,
 			);
 			path = ToDoListWithTDDTests;
@@ -132,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				AC891386226C676A00E21374 /* Main.storyboard */,
+				AC40159922959083000E918A /* DataSource */,
 				ACA1AAC922746E03004C1E95 /* Controllers */,
 				ACA1AAC422746923004C1E95 /* Model */,
 			);
@@ -160,7 +174,7 @@
 		ACA1AAC922746E03004C1E95 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AC891384226C676A00E21374 /* ViewController.swift */,
+				AC891384226C676A00E21374 /* ItemListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -266,11 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC891385226C676A00E21374 /* ViewController.swift in Sources */,
+				AC891385226C676A00E21374 /* ItemListViewController.swift in Sources */,
 				ACA1AAD122766270004C1E95 /* ItemManager.swift in Sources */,
 				AC891383226C676A00E21374 /* AppDelegate.swift in Sources */,
 				ACA1AAD52279D704004C1E95 /* Location+Extension.swift in Sources */,
 				ACA1AACB22758B46004C1E95 /* Location.swift in Sources */,
+				AC40159B22959097000E918A /* ItemListDataProvider.swift in Sources */,
 				ACA1AAD32279CB58004C1E95 /* ToDoItem+Extension.swift in Sources */,
 				ACA1AAC822746DF1004C1E95 /* ToDoItem.swift in Sources */,
 			);
@@ -283,6 +298,7 @@
 				ACA1AACF227660E9004C1E95 /* ItemManagerTests.swift in Sources */,
 				ACA1AACD2276573C004C1E95 /* LocationTests.swift in Sources */,
 				ACA1AAC62274696D004C1E95 /* ToDoItemTests.swift in Sources */,
+				ACA1AAD7229123DF004C1E95 /* ItemListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
