@@ -22,7 +22,7 @@ class ToDoItemTests: XCTestCase {
         secondITem = ToDoItem(title: "Stake",
                               itemDescription: "with wine",
                               timeStamp: 0.0,
-                              location: Location(name: "NewYork"))
+                              location: Location(name: "New York"))
     }
     
     /// STEP1: We need initializer
