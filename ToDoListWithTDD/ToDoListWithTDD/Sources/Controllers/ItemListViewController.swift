@@ -10,6 +10,7 @@ import Foundation
 
 class ItemListViewController: UIViewController {
     
+    static let identifier = "ItemListViewController"
     @IBOutlet var tableView: UITableView!
     @IBOutlet var dataProvider: ItemListDataProvider!
     
